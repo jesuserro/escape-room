@@ -4,18 +4,29 @@ import copy
 import threading
 import time
 import sys
+from IPython.display import Image, display  # Importamos las funciones necesarias para mostrar imágenes
 
 # Variables globales para controlar el juego y el tiempo restante
 game_running = True
 time_left_display = ""
 
+# URLs de imágenes para cada habitación
+room_images = {
+    "game room": "images/game_room.jpg",
+    "bedroom 1": "images/bedroom1.jpg",
+    "bedroom 2": "images/bedroom2.jpg",
+    "living room": "images/living_room.jpg",
+    "outside": "images/outside.jpg"
+}
+
+
 def start_timer():
     """
-    Inicia una cuenta atrás de 180 segundos.
+    Inicia una cuenta atrás de 300 segundos.
     Si el jugador no escapa en ese tiempo, pierde el juego.
     """
     global game_running, time_left_display
-    seconds_left = 180  # 3 minutos
+    seconds_left = 300  # 5 minutos
 
     while seconds_left > 0 and game_running:
         mins, secs = divmod(seconds_left, 60)
@@ -39,6 +50,10 @@ def explore_room(room, object_relations):
     """
     items = [i["name"] for i in object_relations.get(room["name"], [])]
     print(f"You explore the room. This is {room['name']}. You find {', '.join(items)}")
+    
+    # Mostrar la imagen de la habitación
+    if room["name"] in room_images:
+        display(Image(room_images[room["name"]]))
 
 def get_next_room_of_door(door, current_room, object_relations):
     """
