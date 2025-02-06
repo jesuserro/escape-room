@@ -31,7 +31,8 @@ def start_timer():
     while seconds_left > 0 and game_running:
         mins, secs = divmod(seconds_left, 60)
         time_left_display = f"Time left: {mins:02}:{secs:02} minutes"
-        sys.stdout.write(f"\r{time_left_display}\n")  # Imprime en la misma línea
+        # Muestra solo el tiempo en la misma línea sin generar múltiples líneas
+        sys.stdout.write(f"\r{time_left_display}. ") 
         sys.stdout.flush()
         time.sleep(1)
         seconds_left -= 1
