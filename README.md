@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 A continuación se muestra el esquema de las habitaciones y su disposición:
 
-![Mapa del juego](#file:images/map.jpg)
+![Mapa del juego](images/map.jpg)
 
 En este mapa podrás visualizar la conexión entre las distintas habitaciones de la casa.
 
@@ -40,23 +40,23 @@ En este mapa podrás visualizar la conexión entre las distintas habitaciones de
 El juego incluye cinco escenarios principales, cada uno con su propia imagen de referencia:
 
 1. **Sala de Estar (Living Room)**  
-![Living Room](#file:images/living_room.jpg)  
+![Living Room](images/living_room.jpg)  
 *(También se hace referencia a esta imagen en #file:limages/iving_room.jpg, en caso de que sea un archivo alternativo o con diferente resolución.)*
 
 2. **Sala de Juegos (Game Room)**  
-![Game Room](#file:images/game_room.jpg)  
+![Game Room](images/game_room.jpg)  
 Aquí comienzas tu aventura, con un piano, un sofá y la primera puerta que deberás desbloquear.
 
 3. **Dormitorio 1 (Bedroom 1)**  
-![Bedroom 1](#file:images/bedroom1.jpg)  
+![Bedroom 1](images/bedroom1.jpg)  
 Encontrarás una cama y varias puertas de conexión.
 
 4. **Dormitorio 2 (Bedroom 2)**  
-![Bedroom 2](#file:images/bedroom2.jpg)  
+![Bedroom 2](images/bedroom2.jpg)  
 Una segunda habitación que contiene otra cama y un mueble donde podrías encontrar objetos útiles.
 
 5. **Exterior (Outside)**  
-![Exterior](#file:images/outside.jpg)  
+![Exterior](images/outside.jpg)  
 Tu objetivo final es llegar aquí antes de que se acabe el tiempo.
 
 ---
