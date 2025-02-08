@@ -1,6 +1,6 @@
-# Proyecto: Escape Room con Python
+# Escape Room con Python
 
-¡Bienvenido, Jesús! Este proyecto ofrece un sencillo juego de tipo "Escape Room" escrito en Python, en el que tendrás que encontrar llaves, abrir puertas y escapar antes de que se agote el tiempo.
+¡Bienvenidos! Este proyecto ofrece un sencillo juego de tipo "Escape Room" escrito en Python, en el que tendrás que encontrar llaves, abrir puertas y escapar antes de que se agote el tiempo.
 
 ---
 
