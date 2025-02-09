@@ -21,8 +21,6 @@ En este juego despertarás en una casa extraña y deberás explorar varias habit
 pip install -r requirements.txt
 ```
 
-*(En caso de que exista un archivo requirements.txt con las dependencias. Si no, asegúrate de instalar manualmente las librerías que necesites, como `IPython` para mostrar imágenes).*
-
 ---
 
 ## 3. Mapa del juego
@@ -66,9 +64,9 @@ Una segunda habitación que contiene otra cama y un mueble donde podrías encont
 
 4. **Sala de Estar (Living Room)**  
 ![Living Room](images/living_room.jpg)  
-*(También se hace referencia a esta imagen en #file:limages/iving_room.jpg, en caso de que sea un archivo alternativo o con diferente resolución.)*
+¡Ya estás cerca del final! Encuentra la puerta hacia la libertad.
 
-5. **Exterior (Outside)**  
+1. **Exterior (Outside)**  
 ![Exterior](images/outside.jpg)  
 Tu objetivo final es llegar aquí ¡en 5 minutos!.
 
