@@ -37,7 +37,7 @@ En este mapa podrás visualizar la conexión entre las distintas habitaciones de
 
 ## 4. ¿Cómo Jugar?
 
-1. Ejecuta el notebook **escape-room.ipynb** (o **main.ipynb**, según la versión que tengas en tu repositorio) desde tu entorno de Python/Jupyter.
+1. Ejecuta el notebook **main.ipynb** desde tu entorno de Python/Jupyter.
 2. Al iniciarse el juego, se mostrará un texto introductorio y comenzarás en la *Game Room*.
 3. Escribe `explore` para explorar la habitación, verás un listado de objetos que puedes examinar.
 4. Escribe `examine` para inspeccionar un objeto específico. Si encuentras una llave, se guardará en tu inventario.
@@ -76,7 +76,7 @@ Tu objetivo final es llegar aquí antes de que se acabe el tiempo.
 
 ## 6. Estructura de Archivos y Código
 
-- **#file:escape-room.ipynb**  
+- **#file:main.ipynb**  
 Es el punto de entrada principal del juego en Jupyter Notebook (o un notebook equivalente). Aquí se definen las habitaciones, las llaves y la función que inicia el juego (`start_game`). Desde este archivo puedes ejecutar todas las celdas para comenzar a jugar.
 
 - **#file:functions.py**  
