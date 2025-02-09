@@ -70,7 +70,7 @@ Una segunda habitación que contiene otra cama y un mueble donde podrías encont
 
 5. **Exterior (Outside)**  
 ![Exterior](images/outside.jpg)  
-Tu objetivo final es llegar aquí ¡antes de 5 minutos!.
+Tu objetivo final es llegar aquí ¡en 5 minutos!.
 
 ---
 
