@@ -15,7 +15,7 @@ En este juego despertarás en una casa extraña y deberás explorar varias habit
 1. Asegúrate de tener instalado **Python 3.x**.
 2. (Opcional) Instala [Jupyter Notebook](https://jupyter.org/) o ejecuta el proyecto en un entorno compatible con notebooks (por ejemplo, Google Colab).
 3. Clona o descarga este repositorio en tu máquina local.
-4. Desde tu terminal, ubícate en la carpeta del proyecto y ejecuta:
+4. Desde tu terminal, ubícate en la carpeta del proyecto e instala las librerías necesarias para jugar:
 
 ``` python
 pip install -r requirements.txt
