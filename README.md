@@ -87,3 +87,9 @@ Contiene las funciones y la lógica base del juego. Algunas de sus partes clave:
 - `start_timer()`: Controla la cuenta regresiva de 5 minutos. Si el tiempo se agota, el juego termina.
 
 Estas funciones trabajan juntas para ofrecer una experiencia de "Escape Room" en tiempo real. Mientras exploras, podrás ver el tiempo restante en pantalla y, si no logras salir antes de que el contador llegue a cero, perderás la partida.
+
+## 7. Authors
+
+- @Cristina-Puertas-Camarero: <https://github.com/Cristina-Puertas-Camarero>
+- @LuchoRosario: <https://github.com/LuchoRosario>
+- @jesuserro: <https://github.com/jesuserro>
