@@ -81,10 +81,11 @@ Es el punto de entrada principal del juego en Jupyter Notebook (o un notebook eq
 
 - **#file:functions.py**  
 Contiene las funciones y la lógica base del juego. Algunas de sus partes clave:
-- `start_game(game_state, object_relations)`: Inicia el juego y lanza el temporizador en un hilo independiente.
-- `play_room(game_state, room, object_relations)`: Gestiona la interacción del jugador con cada habitación.
-- `examine_item(game_state, item_name, object_relations)`: Permite inspeccionar objetos y recoger llaves.
-- `start_timer()`: Controla la cuenta regresiva de 5 minutos. Si el tiempo se agota, el juego termina.
+
+  - `start_game(game_state, object_relations)`: Inicia el juego y lanza el temporizador en un hilo independiente.
+  - `play_room(game_state, room, object_relations)`: Gestiona la interacción del jugador con cada habitación.
+  - `examine_item(game_state, item_name, object_relations)`: Permite inspeccionar objetos y recoger llaves.
+  - `start_timer()`: Controla la cuenta regresiva de 5 minutos. Si el tiempo se agota, el juego termina.
 
 Estas funciones trabajan juntas para ofrecer una experiencia de "Escape Room" en tiempo real. Mientras exploras, podrás ver el tiempo restante en pantalla y, si no logras salir antes de que el contador llegue a cero, perderás la partida.
 
