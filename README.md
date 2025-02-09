@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ## 3. Mapa del juego
 
-En este mapa podrás visualizar la conexión entre las distintas habitaciones de la casa. A continuación se muestra el esquema de las habitaciones y su disposición:
+En este mapa podrás visualizar la conexión entre las distintas habitaciones de la casa:
 
 ![Mapa del juego](images/map.jpg)
 
