@@ -76,10 +76,12 @@ Tu objetivo final es llegar aquí ¡en 5 minutos!.
 
 ## 6. Estructura de Archivos y Código
 
-- **#file:main.ipynb**  
+- **main.ipynb** 
+ 
 Es el punto de entrada principal del juego en Jupyter Notebook (o un notebook equivalente). Aquí se definen las habitaciones, las llaves y la función que inicia el juego (`start_game`). Desde este archivo puedes ejecutar todas las celdas para comenzar a jugar.
 
-- **#file:functions.py**  
+- **functions.py**  
+
 Contiene las funciones y la lógica base del juego. Algunas de sus partes clave:
 
   - `start_game(game_state, object_relations)`: Inicia el juego y lanza el temporizador en un hilo independiente.
