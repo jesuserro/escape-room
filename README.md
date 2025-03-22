@@ -1,4 +1,4 @@
-# 🏃‍♂️ `Escape Room` Game
+# 🏃‍♂️ Real-Time Escape Room Game in Python
 
 Welcome! This project offers a simple "Escape Room" game written in Python, where you need to find keys, open doors, and escape before time runs out.
 
