@@ -1,21 +1,21 @@
-# `Escape Room` Game
+# 🏃‍♂️ `Escape Room` Game
 
-¡Bienvenidos! Este proyecto ofrece un sencillo juego de tipo "Escape Room" escrito en Python, en el que tendrás que encontrar llaves, abrir puertas y escapar antes de que se agote el tiempo.
-
----
-
-## 1. Introducción
-
-En este juego despertarás en una casa extraña y deberás explorar varias habitaciones, recolectar objetos y descubrir la forma de escapar. El desafío principal consiste en encontrar las llaves adecuadas para abrir las puertas que te conducirán fuera de la casa, todo antes de que se agote el temporizador de 5 minutos.
+Welcome! This project offers a simple "Escape Room" game written in Python, where you need to find keys, open doors, and escape before time runs out.
 
 ---
 
-## 2. Instalación
+## 1. Introduction 📖
 
-1. Asegúrate de tener instalado **Python 3.x**.
-2. (Opcional) Instala [Jupyter Notebook](https://jupyter.org/) o ejecuta el proyecto en un entorno compatible con notebooks (por ejemplo, Google Colab).
-3. Clona o descarga este repositorio en tu máquina local.
-4. Desde tu terminal, ubícate en la carpeta del proyecto e instala las librerías necesarias para jugar:
+In this game, you wake up in a strange house and must explore various rooms, collect items, and find a way to escape. The main challenge is to find the right keys to open the doors that will lead you out of the house, all before the 5-minute timer runs out.
+
+---
+
+## 2. Installation 🛠️
+
+1. Ensure you have **Python 3.x** installed.
+2. (Optional) Install [Jupyter Notebook](https://jupyter.org/) or run the project in a notebook-compatible environment (e.g., Google Colab).
+3. Clone or download this repository to your local machine.
+4. From your terminal, navigate to the project folder and install the necessary libraries to play:
 
 ``` python
 pip install -r requirements.txt
@@ -23,69 +23,71 @@ pip install -r requirements.txt
 
 ---
 
-## 3. Mapa del juego
+## 3. Game Map 🗺️
 
-En este mapa podrás visualizar la conexión entre las distintas habitaciones de la casa:
+In this map, you can visualize the connection between the different rooms of the house:
 
-![Mapa del juego](images/map.jpg)
-
----
-
-## 4. ¿Cómo Jugar?
-
-1. Ejecuta el notebook **main.ipynb** desde tu entorno de Python/Jupyter.
-2. Al iniciarse el juego, se mostrará un texto introductorio y comenzarás en la *Game Room*.
-3. Escribe `explore` para explorar la habitación, verás un listado de objetos que puedes examinar.
-4. Escribe `examine` para inspeccionar un objeto específico. Si encuentras una llave, se guardará en tu inventario.
-5. Usa las llaves para abrir puertas bloqueadas y moverte a otras habitaciones.
-6. El objetivo principal es llegar a la habitación `outside` antes de que el contador de 5 minutos llegue a cero.
-
-¡Disfruta del desafío y buena suerte escapando a tiempo!
+![Game Map](images/map.jpg)
 
 ---
 
-## 5. Descripción de las Habitaciones
+## 4. How to Play 🎮
 
-El juego incluye cinco escenarios principales, cada uno con su propia imagen de referencia:
+1. Run the **main.ipynb** notebook from your Python/Jupyter environment.
+2. At the start of the game, an introductory text will be displayed, and you will begin in the *Game Room*.
+3. Type `explore` to explore the room; you will see a list of objects you can examine.
+4. Type `examine` to inspect a specific object. If you find a key, it will be added to your inventory.
+5. Use the keys to open locked doors and move to other rooms.
+6. The main objective is to reach the `outside` room before the 5-minute timer runs out.
 
-1. **Sala de Juegos (Game Room)**  
-![Game Room](images/game_room.jpg)  
-Aquí comienzas tu aventura, con un piano, un sofá y la primera puerta que deberás desbloquear.
-
-2. **Dormitorio 1 (Bedroom 1)**  
-![Bedroom 1](images/bedroom1.jpg)  
-Encontrarás una cama y varias puertas de conexión.
-
-3. **Dormitorio 2 (Bedroom 2)**  
-![Bedroom 2](images/bedroom2.jpg)  
-Una segunda habitación que contiene otra cama y un mueble donde podrías encontrar objetos útiles.
-
-4. **Sala de Estar (Living Room)**  
-![Living Room](images/living_room.jpg)  
-¡Ya estás cerca del final! Encuentra la puerta hacia la libertad.
-
-1. **Exterior (Outside)**  
-![Exterior](images/outside.jpg)  
-Tu objetivo final es llegar aquí ¡en 5 minutos!.
+Enjoy the challenge and good luck escaping in time!
 
 ---
 
-## 6. Estructura de Archivos y Código
+## 5. Room Descriptions 🏠
+
+The game includes five main scenarios, each with its own reference image:
+
+1. **Game Room**  
+   ![Game Room](images/game_room.jpg)  
+   Here you start your adventure, with a piano, a sofa, and the first door you need to unlock.
+
+2. **Bedroom 1**  
+   ![Bedroom 1](images/bedroom1.jpg)  
+   You will find a bed and several connecting doors.
+
+3. **Bedroom 2**  
+   ![Bedroom 2](images/bedroom2.jpg)  
+   A second room containing another bed and a cabinet where you might find useful items.
+
+4. **Living Room**  
+   ![Living Room](images/living_room.jpg)  
+   You are close to the end! Find the door to freedom.
+
+5. **Outside**  
+   ![Outside](images/outside.jpg)  
+   Your final goal is to get here within 5 minutes!
+
+---
+
+## 6. File and Code Structure 📂
 
 - **main.ipynb**  
-Es el punto de entrada principal del juego en Jupyter Notebook (o un notebook equivalente). Aquí se definen las habitaciones, las llaves y la función que inicia el juego (`start_game`). Desde este archivo puedes ejecutar todas las celdas para comenzar a jugar.
+  The main entry point of the game in Jupyter Notebook (or an equivalent notebook). Here, rooms, keys, and the function that starts the game (`start_game`) are defined. You can run all the cells from this file to start playing.
 
 - **functions.py**  
-Contiene las funciones y la lógica base del juego. Algunas de sus partes clave:
+  Contains the base functions and logic of the game. Some key parts include:
 
-  - `start_game(game_state, object_relations)`: Inicia el juego y lanza el temporizador en un hilo independiente.
-  - `play_room(game_state, room, object_relations)`: Gestiona la interacción del jugador con cada habitación.
-  - `examine_item(game_state, item_name, object_relations)`: Permite inspeccionar objetos y recoger llaves.
-  - `start_timer()`: Controla la cuenta regresiva de 5 minutos. Si el tiempo se agota, el juego termina.
+  - `start_game(game_state, object_relations)`: Starts the game and launches the timer in a separate thread.
+  - `play_room(game_state, room, object_relations)`: Manages player interaction with each room.
+  - `examine_item(game_state, item_name, object_relations)`: Allows inspecting objects and collecting keys.
+  - `start_timer()`: Controls the 5-minute countdown. If time runs out, the game ends.
 
-Estas funciones trabajan juntas para ofrecer una experiencia de "Escape Room" en tiempo real. Mientras exploras, podrás ver el tiempo restante en pantalla y, si no logras salir antes de que el contador llegue a cero, perderás la partida.
+These functions work together to provide a real-time "Escape Room" experience. As you explore, you will see the remaining time on the screen, and if you do not manage to escape before the timer reaches zero, you will lose the game.
 
-## 7. Authors
+---
+
+## 7. Authors ✍️
 
 - @Cristina-Puertas-Camarero: <https://github.com/Cristina-Puertas-Camarero>
 - @LuchoRosario: <https://github.com/LuchoRosario>
